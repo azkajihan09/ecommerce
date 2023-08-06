@@ -19,13 +19,13 @@ module.exports = createCoreController('api::payment-callback.payment-callback', 
         if (request.transaction_status == 'settlement') {
             params = {
                 'data': {
-                    'status': 'purchased',
+                    'statusOrder': 'purchased',
                 }
             }
         } else {
             params = {
                 'data': {
-                    'status': 'cancel',
+                    'statusOrder': 'cancel',
                 }
             }
         }
